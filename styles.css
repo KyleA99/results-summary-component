@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "HankenGrotesk";
+    /* Helps with performance */
+    font-display: swap;
+    /* List range of fontweights because it is a variable font */
+    font-weight: 100 900;
+    src: url("assets/fonts/HankenGrotesk-VariableFont_wght.ttf")
+        /* Added because it is a .ttf file */
+        format("truetype");
+}
