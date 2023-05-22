@@ -16,14 +16,19 @@
     --clr-secondary-dark-blue-500: 240, 70%, 45%;
 
     --clr-neutral-white: 0, 0%, 100%;
-    --clr-primary-light-gray: 220, 100%, 95%;
-    --clr-secondary-light-purple: 240, 100%, 90%;
-    --clr-secondary-dark-blue-gray: 225, 30%, 25%;
+    --clr-neutral-light-gray: 220, 100%, 95%;
+    --clr-neutral-light-purple: 240, 100%, 90%;
+    --clr-neutral-dark-blue-gray: 225, 30%, 25%;
 
     --clr-primary-400: hsl(var(--clr-primary-light-purple-400));
     --clr-primary-500: hsl(var(--clr-primary-dark-purple-500));
     --clr-secondary-400: hsl(var(--clr-secondary-light-blue-400));
     --clr-secondary-500: hsl(var(--clr-secondary-dark-blue-500));
+
+    --clr-neutral-100: hsl(var(--clr-neutral-white));
+    --clr-neutral-200: hsl(var(--clr-neutral-light-gray));
+    --clr-neutral-300: hsl(var(--clr-neutral-light-purple));
+    --clr-neutral-700: hsl(var(--clr-neutral-dark-blue-gray));
 
     /* "Your Result" gradients */
     --gradient-primary: linear-gradient(var(--clr-primary-400), var(--clr-secondary-400));
@@ -46,6 +51,12 @@
     --fw-regular: 500;
     --fw-bold: 700;
     --fw-black: 800;
+    --fs-400: 1.125rem;
+    --fs-500: 1.25rem;
+    --fs-600: 1.5rem;
+    --fs-700: 1.75rem;
+    --fs-800: 2rem;
+    --fs-900: 5rem;
 }
 
 *, *::before, *::after {
@@ -64,6 +75,9 @@ html, body {
 body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    font-family: var(--font-family-default);
+    font-size: var(--fs-400);
+    color: var(--clr-ne);
 }
 
 img, picture, video, canvas, svg {
