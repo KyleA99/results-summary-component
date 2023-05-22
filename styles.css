@@ -103,4 +103,23 @@ p, h1, h2, h3, h4, h5, h6 {
         display: grid;
         place-items: center;
     }
+
+    .section-title {
+        font-weight: var(--fw-bold);
+        font-size: var(--fs-600);
+    }
+
+    .continue-button {
+        color: var(--clr-neutral-100); 
+        line-height: 1;
+        background: var(--clr-neutral-700);
+        padding: 1rem 2rem;
+        border: 0;
+        border-radius: 100vw;
+        cursor: pointer;
+      }
+
+    .continue-button:hover, .continue-button:focus-visible {
+        background: var(--gradient-primary);
+    }
 }
