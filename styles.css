@@ -9,6 +9,45 @@
         format("truetype");
 }
 
+:root {
+    --clr-primary-light-purple-400: 250, 100%, 65%;
+    --clr-primary-dark-purple-500: 260, 70%, 45%;
+    --clr-secondary-light-blue-400: 240, 80%, 55%;
+    --clr-secondary-dark-blue-500: 240, 70%, 45%;
+
+    --clr-neutral-white: 0, 0%, 100%;
+    --clr-primary-light-gray: 220, 100%, 95%;
+    --clr-secondary-light-purple: 240, 100%, 90%;
+    --clr-secondary-dark-blue-gray: 225, 30%, 25%;
+
+    --clr-primary-400: hsl(var(--clr-primary-light-purple-400));
+    --clr-primary-500: hsl(var(--clr-primary-dark-purple-500));
+    --clr-secondary-400: hsl(var(--clr-secondary-light-blue-400));
+    --clr-secondary-500: hsl(var(--clr-secondary-dark-blue-500));
+
+    /* "Your Result" gradients */
+    --gradient-primary: linear-gradient(var(--clr-primary-400), var(--clr-secondary-400));
+    --gradient-to-transparent: linear-gradient(var(--clr-primary-500), hsl(var(--clr-secondary-500, 0)));
+
+    /* "Summary" class colors */
+    --clr-red: 0, 100%, 65%;
+    --clr-yellow: 40, 100%, 55%;
+    --clr-green: 165, 100%, 35%;
+    --clr-blue: 235, 85%, 45%;
+
+    /* "Summary" class accent colors */
+    --clr-accent-red: 0, 100%, 70%;
+    --clr-accent-yellow: 40, 100%, 55%;
+    --clr-accent-green: 165, 100%, 35%;
+    --clr-accent-blue: 234, 85%, 45%;
+
+    /* Font styling */
+    --font-family-default: 'HankenGrotesk', sans-serif;
+    --fw-regular: 500;
+    --fw-bold: 700;
+    --fw-black: 800;
+}
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
