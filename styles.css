@@ -10,21 +10,25 @@
 }
 
 :root {
+    /* Custom-class HSL colors */
     --clr-primary-light-purple-400: 250, 100%, 65%;
     --clr-primary-dark-purple-500: 260, 70%, 45%;
     --clr-secondary-light-blue-400: 240, 80%, 55%;
     --clr-secondary-dark-blue-500: 240, 70%, 45%;
-
-    --clr-neutral-white: 0, 0%, 100%;
-    --clr-neutral-light-gray: 220, 100%, 95%;
-    --clr-neutral-light-purple: 240, 100%, 90%;
-    --clr-neutral-dark-blue-gray: 225, 30%, 25%;
-
+    
+    /* Allows for manipulation of opacity */
     --clr-primary-400: hsl(var(--clr-primary-light-purple-400));
     --clr-primary-500: hsl(var(--clr-primary-dark-purple-500));
     --clr-secondary-400: hsl(var(--clr-secondary-light-blue-400));
     --clr-secondary-500: hsl(var(--clr-secondary-dark-blue-500));
 
+    /* Custom-class HSL colors */
+    --clr-neutral-white: 0, 0%, 100%;
+    --clr-neutral-light-gray: 220, 100%, 95%;
+    --clr-neutral-light-purple: 240, 100%, 90%;
+    --clr-neutral-dark-blue-gray: 225, 30%, 25%;
+
+    /* Allows for manipulation of opacity */
     --clr-neutral-100: hsl(var(--clr-neutral-white));
     --clr-neutral-200: hsl(var(--clr-neutral-light-gray));
     --clr-neutral-300: hsl(var(--clr-neutral-light-purple));
@@ -120,6 +124,26 @@ p, h1, h2, h3, h4, h5, h6 {
       }
 
     .continue-button:hover, .continue-button:focus-visible {
+        background: var(--gradient-primary);
+    }
+
+    .results-summary-container {
+        max-width: 46rem;
+        /* Makes it easy to have two columns for larger screen sizes responsiveness */
+        display: grid;
+    }
+}
+
+@media (min-width: 600px) {
+    .results-summary-container {
+        grid-template-columns: 1fr 1fr;
+        border-radius: 2rem;
+        /* var nested in hsl version to allow for .2 opacity property */
+        box-shadow: .5rem 1rem 3rem hsl(var(--clr-neutral-dark-blue-gray), .2);
+    }
+
+    .results {
+        text-align: center;
         background: var(--gradient-primary);
     }
 }
