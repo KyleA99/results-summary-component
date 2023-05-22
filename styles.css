@@ -128,6 +128,10 @@ p, h1, h2, h3, h4, h5, h6 {
     }
 
     .results-summary-container {
+        /* Scoped custom properties */
+        --border-radius: 2rem;
+        --padding: 2.5rem;
+
         max-width: 46rem;
         /* Makes it easy to have two columns for larger screen sizes responsiveness */
         display: grid;
@@ -137,13 +141,20 @@ p, h1, h2, h3, h4, h5, h6 {
 @media (min-width: 600px) {
     .results-summary-container {
         grid-template-columns: 1fr 1fr;
-        border-radius: 2rem;
+        border-radius: var(--border-radius);
+        overflow: hidden;
         /* var nested in hsl version to allow for .2 opacity property */
         box-shadow: .5rem 1rem 3rem hsl(var(--clr-neutral-dark-blue-gray), .2);
     }
 
+    .results, .summary-container {
+        padding: var(--padding);
+    }
+
     .results {
+        color: hsl(var(--clr-neutral-white), 8.5);
         text-align: center;
         background: var(--gradient-primary);
+        border-radius: var(--border-radius);
     }
 }
