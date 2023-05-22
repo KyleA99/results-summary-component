@@ -101,11 +101,11 @@ p, h1, h2, h3, h4, h5, h6 {
     isolation: isolate;
 }
 
-@media (min-width: 600px) {
+@media screen and (min-width: 360px) and (max-width: 600px) {
     body {
         min-height: 100vh;
         display: grid;
-        place-items: center;
+        /* place-items: center; */
     }
 
     .section-title {
@@ -136,10 +136,24 @@ p, h1, h2, h3, h4, h5, h6 {
         /* Makes it easy to have two columns for larger screen sizes responsiveness */
         display: grid;
     }
+
+    .results {
+        color: hsl(var(--clr-neutral-white), 8.5);
+        text-align: center;
+        background: var(--gradient-primary);
+        border-radius: 0 0 var(--border-radius) var(--border-radius);
+    }
 }
 
 @media (min-width: 600px) {
+    body {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+    }
+
     .results-summary-container {
+        margin-inline: 1rem;
         grid-template-columns: 1fr 1fr;
         border-radius: var(--border-radius);
         overflow: hidden;
@@ -152,9 +166,6 @@ p, h1, h2, h3, h4, h5, h6 {
     }
 
     .results {
-        color: hsl(var(--clr-neutral-white), 8.5);
-        text-align: center;
-        background: var(--gradient-primary);
         border-radius: var(--border-radius);
     }
 }
