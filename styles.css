@@ -5,7 +5,7 @@
     /* List range of fontweights because it is a variable font */
     font-weight: 100 900;
     src: url("assets/fonts/HankenGrotesk-VariableFont_wght.ttf")
-        /* Added because it is a .ttf file */
+        /* Added because linked file is a .ttf file */
         format("truetype");
 }
 
@@ -150,6 +150,7 @@ body {
 .results-summary-container {
     border-radius: var(--border-radius);
     max-width: 46rem;
+    padding: 0 var(--padding) var(--padding);
 
     /* Makes it easy to have two columns for larger screen sizes */
     display: grid;
@@ -185,6 +186,11 @@ body {
     font-size: var(--fs-700);
     font-weight: var(--fw-bold);
     margin-bottom: 1.5rem
+}
+
+.result-percentile {
+    width: 60%;
+    margin: 0 auto 2rem;
 }
     
 .summary {
@@ -231,12 +237,15 @@ body {
     color: var(--clr-neutral-700);
 }
 
-
-@media screen and (min-width: 630px) {
+@media screen and (min-width: 715px) {
     body {
         min-height: 100vh;
         display: grid;
         place-items: center;
+    }
+
+    .section-title {
+        margin-top: 0;
     }
 
     .results-summary-container {
@@ -259,5 +268,9 @@ body {
         background: var(--gradient-primary);
         border-radius: var(--border-radius);
         padding: var(--padding) calc(var(--padding) * 1.5)
+    }
+
+    .result-percentile {
+        width: 100%;
     }
 }
