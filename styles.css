@@ -1,7 +1,9 @@
 @font-face {
-    font-family: "HankenGrotesk";
+    font-family: HankenGrotesk;
+
     /* Helps with performance */
     font-display: swap;
+
     /* List range of fontweights because it is a variable font */
     font-weight: 100 900;
     src: url("assets/fonts/HankenGrotesk-VariableFont_wght.ttf")
@@ -86,6 +88,8 @@ body {
     font-family: var(--font-family-default);
     font-size: var(--fs-400);
     color: var(--clr-neutral-700);
+    min-height: 100vh;
+    display: grid;
 }
 
 img, picture, video, canvas, svg {
@@ -103,11 +107,6 @@ p, h1, h2, h3, h4, h5, h6 {
 
 #root, #__next {
     isolation: isolate;
-}
-
-body {
-    min-height: 100vh;
-    display: grid;
 }
 
 .flex-group {
@@ -215,12 +214,15 @@ body {
 .summary-item[data-item-type="accent-1"] {
     --item-color: var(--clr-accent-red);
 }
+
 .summary-item[data-item-type="accent-2"] {
     --item-color: var(--clr-accent-yellow);
 }
+
 .summary-item[data-item-type="accent-3"] {
     --item-color: var(--clr-accent-green);
 }
+
 .summary-item[data-item-type="accent-4"] {
     --item-color: var(--clr-accent-blue);
 }
@@ -243,10 +245,12 @@ body {
 
     .results-summary-container {
         margin-inline: 1rem;
+
         /* Expands to two columns larger screen sizes */
         grid-template-columns: 1fr 1fr;
         border-radius: var(--border-radius);
         overflow: hidden;
+
         /* var nested in hsl version to allow for .2 opacity property */
         box-shadow: .5rem 1rem 3rem hsl(var(--clr-neutral-dark-blue-gray), .2);
     }
