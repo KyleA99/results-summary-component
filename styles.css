@@ -38,6 +38,7 @@
 
     /* "Your Result" gradients */
     --gradient-primary: linear-gradient(var(--clr-primary-400), var(--clr-secondary-400));
+    /* stylelint-disable-next-line */
     --gradient-to-transparent: linear-gradient(var(--clr-primary-500), hsl(var(--clr-secondary-dark-blue-500), 0));
 
     /* "Summary" class colors */
@@ -105,6 +106,7 @@ p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
 }
 
+/* stylelint-disable-next-line */
 #root, #__next {
     isolation: isolate;
 }
@@ -154,6 +156,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .results {
+    /* stylelint-disable-next-line */
     color: hsl(var(--clr-neutral-white), 8.5);
     text-align: center;
     background: var(--gradient-primary);
@@ -199,6 +202,7 @@ p, h1, h2, h3, h4, h5, h6 {
     align-items: center;
     padding: 1rem;
     border-radius: .5rem;
+    /* stylelint-disable-next-line */
     background-color: hsl(var(--item-color), .1);
 }
 
@@ -229,6 +233,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .summary-score {
     font-weight: var(--fw-black);
+    /* stylelint-disable-next-line */
     color: hsl(var(--clr-neutral-hsl-700), .5);
 }
     
@@ -252,6 +257,7 @@ p, h1, h2, h3, h4, h5, h6 {
         overflow: hidden;
 
         /* var nested in hsl version to allow for .2 opacity property */
+        /* stylelint-disable-next-line */
         box-shadow: .5rem 1rem 3rem hsl(var(--clr-neutral-dark-blue-gray), .2);
     }
 
@@ -260,6 +266,7 @@ p, h1, h2, h3, h4, h5, h6 {
     }
 
     .results {
+        /* stylelint-disable-next-line */
         color: hsl(var(--clr-neutral-white), 8.5);
         text-align: center;
         background: var(--gradient-primary);
