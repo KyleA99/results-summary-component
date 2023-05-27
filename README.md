@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Results Summary Component - live link](https://your-live-site-url.com)
+- Live Site URL: [Results Summary Component - live link](https://kylea99.github.io/results-summary-component/)
 
 ### Built with
 
