@@ -9,6 +9,7 @@ This is a solution to the [Results summary component challenge on Frontend Mento
   - [Screenshot](#screenshot)
   - [Links](#links)
   - [Built with](#built-with)
+- [Acknowledgments](#acknowledgments)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
@@ -35,3 +36,7 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - CSS Grid
+
+## Acknowledgments
+
+This project was completed while watching Kevin Powell's video series for this project.  If you would like to view projects I constructed myself, please refer to some of the projects I completed during The Odin Project.
